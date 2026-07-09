@@ -20,6 +20,9 @@ div[class="Pc-card Card"] {
     display: none !important;
 }
 
+div[class="Pc-word-new"] {
+    display: none !important;
+}
 
 /* 去除主页sidebar */
 div[data-za-detail-view-path-module="RightSideBar"] {
