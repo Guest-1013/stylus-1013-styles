@@ -16,6 +16,11 @@ div[class="Card TopstoryItem TopstoryItem--advertCard TopstoryItem-isRecommend"]
     display: none !important;
 }
 
+div[class="Pc-card Card"] {
+    display: none !important;
+}
+
+
 /* 去除主页sidebar */
 div[data-za-detail-view-path-module="RightSideBar"] {
     display: none !important;

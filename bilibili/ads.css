@@ -1,0 +1,15 @@
+div[class="video-card-ad-small"] {
+    display: none !important;
+}
+
+div[class="ad-report ad-floor-exp right-bottom-banner"] {
+    display: none !important;
+}
+
+div[class="recommended-swipe"] {
+    display: none !important;
+}
+
+div[class="bili-video-card is-rcmd"] {
+    display: none !important;
+}
