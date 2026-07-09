@@ -6,8 +6,11 @@ div[class*="SearchBar"], label[class*="SearchBar"] {
     
     /* TODO: 隐藏下拉框中的热搜 */
     
+
     /* 搜索框默认文字 */
     input::placeholder {
         opacity: 0.0 !important;
     }
 }
+
+
