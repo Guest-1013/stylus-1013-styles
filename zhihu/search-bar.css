@@ -2,15 +2,20 @@ div[class*="SearchBar"], label[class*="SearchBar"] {
     input {
         color: whitesmoke !important;
     }
-    
-    
-    /* TODO: 隐藏下拉框中的热搜 */
-    
 
-    /* 搜索框默认文字 */
+    /* 隐藏搜索框默认文字 */
     input::placeholder {
         opacity: 0.0 !important;
     }
 }
 
 
+/* 隐藏下拉框中的热搜 */
+div[class="SearchBar-label"] {
+    display: none !important;
+}
+
+
+div[id*="topSearch"] {
+    display: none !important;
+}
