@@ -1,5 +1,5 @@
 /* 背景色 */
-html, main, body, div, font, strong, label, meta, header, pre, h1, h2, article, span, button, blockquote, figcaption, textarea {
+html, main, body, div, font, strong, label, meta, header, pre, h1, h2, h3, h4, article, span, button, blockquote, figcaption, textarea {
     background-color: #6A7B6C !important;
     color: whitesmoke !important; 
 }
@@ -23,6 +23,11 @@ div:has(> nav) + div {
 /* 上方，navbar下面一块应当透明的小块 */
 div[id="_scroll-padding-polyfill_"] {
     display: none !important;
+}
+
+/* 主页上的banner */
+div[class="UserCover"] {
+    opacity: 0.5 !important;
 }
 
 /* 移除热搜模块后面的渐变背景 */
