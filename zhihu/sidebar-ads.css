@@ -1,0 +1,22 @@
+/* 隐藏侧边热搜栏 */
+div[class="HotSearchCard"] {
+    display: none !important;
+}
+
+/* 隐藏文章下方广告 */
+div[class="pc-article-answer"] {
+    display: none !important;
+}
+
+div[class="Pc-Business-Card-PcTopFeedBanner"] {
+    display: none !important;
+}
+
+div[class="Card TopstoryItem TopstoryItem--advertCard TopstoryItem-isRecommend"] {
+    display: none !important;
+}
+
+/* 去除主页sidebar */
+div[data-za-detail-view-path-module="RightSideBar"] {
+    display: none !important;
+}

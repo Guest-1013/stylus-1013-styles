@@ -1,0 +1,12 @@
+nav {
+    a {
+        background: #6A7B6C !important; 
+    }
+    a:link {
+        background: #6A7B6C !important; 
+    }
+    a:hover {
+        background: #90a993 !important; 
+    }
+}
+

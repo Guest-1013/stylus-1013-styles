@@ -1,0 +1,54 @@
+
+
+/* 背景色 */
+html, main, body, div, meta, header, pre, h1, article, span, button, blockquote, figcaption {
+    background-color: #6A7B6C !important;
+    color: whitesmoke !important; 
+}
+
+div[class="css-1ndlr1n"] {
+    display: none !important;
+}
+
+/* 上方一块应当透明的小块 */
+div[id="_scroll-padding-polyfill_"] {
+    display: none !important;
+}
+
+
+/* 链接颜色 */
+a {
+    outline-color:whitesmoke !important;
+}
+
+a:link {
+    color:#303b2f;
+    background:#c1d1cf;
+    text-decoration:none !important;
+}
+
+
+a:visited {
+    color:#303b2f;
+    background:#c1d1cf;
+    text-decoration:none !important;
+}
+
+a:focus {
+    color:#303b2f !important; 
+    background:#c1d1cf !important;
+    text-decoration:none !important;
+}
+ 
+a:hover { 
+    color: rgb(0, 12, 107) !important;
+    background:whitesmoke !important;
+    text-decoration: none !important;
+    /* font-family: 'UbuntuMonoNF'; */
+}
+
+a:active {
+    background:#c1d1cf !important;
+    text-decoration:none !important;
+}
+
