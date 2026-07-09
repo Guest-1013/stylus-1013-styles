@@ -1,4 +1,15 @@
+/* 行内 */
 code {
     background: #89a38c !important;
     color: #2626f9 !important;
+}
+
+/* 行间 */
+pre:has(code) {
+    background: #89a38c !important;
+    
+    span {
+        background: #89a38c !important;
+        color: whitesmoke !important;
+    }
 }
