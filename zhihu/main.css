@@ -1,9 +1,12 @@
-
-
 /* 背景色 */
-html, main, body, div, font, strong, label, meta, header, pre, h1, h2, article, span, button, blockquote, figcaption {
+html, main, body, div, font, strong, label, meta, header, pre, h1, h2, article, span, button, blockquote, figcaption, textarea {
     background-color: #6A7B6C !important;
     color: whitesmoke !important; 
+}
+
+/* 回答输入框中标题颜色 */
+textarea::placeholder {
+    color: whitesmoke !important;
 }
 
 /* 搜索关键词高亮 */
