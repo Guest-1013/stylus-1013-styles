@@ -1,12 +1,13 @@
 
 
 /* 背景色 */
-html, main, body, div, font, meta, header, pre, h1, article, span, button, blockquote, figcaption {
+html, main, body, div, font, strong, meta, header, pre, h1, article, span, button, blockquote, figcaption {
     background-color: #6A7B6C !important;
     color: whitesmoke !important; 
 }
 
-/* navbar上一块应当透明的小块，在直接含有<nav>的<div>后的一个<div> */
+
+/* navbar上一块应当透明的小块，在含有<nav>的<div>后的一个<div> */
 div:has(> nav) + div {
     display: none !important;
 }
