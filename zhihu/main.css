@@ -1,7 +1,7 @@
 
 
 /* 背景色 */
-html, main, body, div, font, strong, meta, header, pre, h1, article, span, button, blockquote, figcaption {
+html, main, body, div, font, strong, label, meta, header, pre, h1, article, span, button, blockquote, figcaption {
     background-color: #6A7B6C !important;
     color: whitesmoke !important; 
 }
