@@ -1,0 +1,12 @@
+div[class*="SearchBar"], label[class*="SearchBar"] {
+    input {
+        color: whitesmoke !important;
+    }
+    
+    
+    /* TODO: 隐藏下拉框中的热搜 */
+    
+    input::placeholder {
+        opacity: 0.0 !important;
+    }
+}
