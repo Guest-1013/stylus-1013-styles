@@ -1,3 +1,9 @@
+/* 一般输入框 */
+input::placeholder {
+    color: whitesmoke !important;
+}
+
+/* 搜索框 */
 div[class*="SearchBar"], label[class*="SearchBar"] {
     input {
         color: whitesmoke !important;
