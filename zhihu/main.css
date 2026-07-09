@@ -6,11 +6,12 @@ html, main, body, div, meta, header, pre, h1, article, span, button, blockquote,
     color: whitesmoke !important; 
 }
 
-div[class="css-1ndlr1n"] {
+/* navbar上一块应当透明的小块，在直接含有<nav>的<div>后的一个<div> */
+div:has(> nav) + div {
     display: none !important;
 }
 
-/* 上方一块应当透明的小块 */
+/* 上方，navbar下面一块应当透明的小块 */
 div[id="_scroll-padding-polyfill_"] {
     display: none !important;
 }
