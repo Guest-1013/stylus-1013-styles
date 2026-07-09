@@ -76,3 +76,15 @@ a:active {
     text-decoration:none !important;
 }
 
+/* 链接卡片的背景 */
+a[data-draft-type="link-card"] {
+    background-color: #6A7B6C !important;
+}
+
+a[data-draft-type="link-card"]:hover {
+    background-color: #5c6a5d !important;
+}
+
+a[class="tag type_a"] {
+    background-color: #6A7B6C !important;
+}
