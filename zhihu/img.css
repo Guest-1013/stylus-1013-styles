@@ -1,9 +1,0 @@
-/* 放大图片的背景 */
-div:has(+img) {
-    display: none !important;
-}
-
-/* 选择 img 后面紧跟着的第一个 div 并隐藏，但不隐藏回答框图标后面的输入框对应的div */
-img:not([class*="Avatar"]) + div {
-    display: none !important;
-}

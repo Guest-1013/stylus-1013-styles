@@ -1,7 +1,110 @@
+@-moz-document domain("zhihu.com") {
+nav {
+    a {
+        background: #6E7B6C !important;
+    }
+    a:link {
+        background: #6E7B6C !important;
+    }
+    a:hover {
+        background: #90a993 !important;
+    }
+}
+}
+
+@-moz-document domain("zhihu.com") {
+/* 一般输入框 */
+input::placeholder {
+    color: whitesmoke !important;
+}
+
+/* 搜索框 */
+div[class*="SearchBar"],
+label[class*="SearchBar"] {
+    input {
+        color: whitesmoke !important;
+    }
+
+    /* 隐藏搜索框默认文字 */
+    input::placeholder {
+        opacity: 0.0 !important;
+    }
+}
+
+
+/* 隐藏下拉框中的热搜 */
+div[class="SearchBar-label"] {
+    display: none !important;
+}
+
+
+div[id*="topSearch"] {
+    display: none !important;
+}
+}
+
+@-moz-document domain("zhihu.com") {
+/* 放大图片的背景 */
+div:has(+img) {
+    display: none !important;
+}
+
+/* 选择 img 后面紧跟着的第一个 div 并隐藏，但不隐藏回答框图标后面的输入框对应的div */
+img:not([class*="Avatar"]) + div {
+    display: none !important;
+}
+}
+
+@-moz-document domain("zhihu.com") {
+/* 隐藏侧边热搜栏 */
+div[class="HotSearchCard"] {
+    display: none !important;
+}
+
+/* 隐藏文章下方广告 */
+div[class="pc-article-answer"],
+div[class="pc-article-answer-text-chain"],
+div[class="Pc-Business-Card-PcTopFeedBanner"],
+div[class="Card TopstoryItem TopstoryItem--advertCard TopstoryItem-isRecommend"],
+div[class="Pc-card Card"],
+div[class="Pc-word-new"] {
+    display: none !important;
+}
+
+/* 去除主页sidebar */
+div[data-za-detail-view-path-module="RightSideBar"] {
+    display: none !important;
+}
+}
+
+@-moz-document domain("zhihu.com") {
 /* 背景色 */
-html, main, body, div, font, strong, label, meta, header, pre, h1, h2, h3, h4, article, span, button, blockquote, figcaption, textarea {
-    background-color: #6A7B6C !important;
-    color: whitesmoke !important; 
+html,
+main,
+body,
+div,
+div p,
+font,
+strong,
+label,
+meta,
+header,
+h1,
+h2,
+h3,
+h4,
+article,
+button,
+blockquote,
+figcaption,
+ul,
+textarea {
+    background-color: #6E7B6C !important;
+    color: whitesmoke !important;
+}
+
+span {
+    background-color: #6E7B6C !important;
 }
 
 /* 回答输入框中标题颜色 */
@@ -35,55 +138,53 @@ div[data-za-detail-view-path-module="Content"] {
     div {
         background-image: none !important;
     }
-    
 }
 
 div[class="List"] {
     div {
         background-image: none !important;
     }
-    
 }
 
 /* 链接颜色 */
 a {
-    outline-color:whitesmoke !important;
+    outline-color: whitesmoke !important;
 }
 
 a:link {
-    color:#303b2f;
-    background:#c1d1cf;
-    text-decoration:none !important;
+    color: #303b2f;
+    background: #c1d1cf;
+    text-decoration: none !important;
 }
 
 
 a:visited {
-    color:#303b2f;
-    background:#c1d1cf;
-    text-decoration:none !important;
+    color: #303b2f;
+    background: #c1d1cf;
+    text-decoration: none !important;
 }
 
 a:focus {
-    color:#303b2f !important; 
-    background:#c1d1cf !important;
-    text-decoration:none !important;
+    color: #303b2f !important;
+    background: #c1d1cf !important;
+    text-decoration: none !important;
 }
- 
-a:hover { 
+
+a:hover {
     color: rgb(0, 12, 107) !important;
-    background:whitesmoke !important;
+    background: whitesmoke !important;
     text-decoration: none !important;
     /* font-family: 'UbuntuMonoNF'; */
 }
 
 a:active {
-    background:#c1d1cf !important;
-    text-decoration:none !important;
+    background: #c1d1cf !important;
+    text-decoration: none !important;
 }
 
 /* 链接卡片的背景 */
 a[data-draft-type="link-card"] {
-    background-color: #6A7B6C !important;
+    background-color: #6E7B6C !important;
 }
 
 a[data-draft-type="link-card"]:hover {
@@ -91,5 +192,61 @@ a[data-draft-type="link-card"]:hover {
 }
 
 a[class="tag type_a"] {
-    background-color: #6A7B6C !important;
+    background-color: #6E7B6C !important;
+}
+
+a:has(img) {
+    background-color: #6E7B6C !important;
+}
+}
+
+@-moz-document domain("zhihu.com") {
+pre,
+code span {
+    background-color: #303b2f !important;
+}
+
+/* editor */
+pre:has(div[class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"]) {
+    background-color: #191a1e !important;
+}
+
+div[class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"]:has(span.prism-token) {
+    background-color: #191a1e !important;
+}
+
+div[class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"]:has(span.prism-token) span {
+    background-color: #191a1e !important;
+}
+
+
+/* output */
+span {
+    .k {
+        font-style: italic !important;
+        /* e.g. pub, fn, return in rust */
+        color: #a8e3af !important;
+    }
+
+    .nf {
+        color: lightblue !important;
+        /* e.g. main in rust */
+    }
+
+    .kt {
+        color: yellow !important;
+        /* e.g. i32 in rust */
+    }
+
+    .s {
+        color: orange !important;
+        /* string */
+    }
+
+    .mi,
+    .mf {
+        color: #00ccd1 !important;
+        /* number */
+    }
+}
 }
