@@ -49,8 +49,10 @@ div:has(+img) {
     display: none !important;
 }
 
-/* 选择 img 后面紧跟着的第一个 div 并隐藏，但不隐藏回答框图标后面的输入框对应的div */
-img:not([class*="Avatar"]) + div {
+
+
+/* 选择 img 后面紧跟着的第一个 div 并隐藏以隐藏图片放大后遮盖的<div>元素，但不隐藏回答框图标后面的输入框对应的div和文章合集图标后的文字（在<a>内） */
+img:not([class*="Avatar"]) + div:not(a > div) {
     display: none !important;
 }
 }
@@ -62,12 +64,14 @@ div[class="HotSearchCard"] {
 }
 
 /* 隐藏文章下方广告 */
+div[class="pc-ylh-ad pc-ylh-ad--bigimg"],
 div[class="pc-article-answer"],
 div[class="pc-article-answer-text-chain"],
 div[class="Pc-Business-Card-PcTopFeedBanner"],
 div[class="Card TopstoryItem TopstoryItem--advertCard TopstoryItem-isRecommend"],
 div[class="Pc-card Card"],
-div[class="Pc-word-new"] {
+div[class="Pc-word-new"],
+div[class="pc-article-answer-big-img"] {
     display: none !important;
 }
 
@@ -93,6 +97,8 @@ h1,
 h2,
 h3,
 h4,
+a span,
+a[class="PostItem"],
 article,
 button,
 blockquote,
@@ -198,12 +204,29 @@ a[class="tag type_a"] {
 a:has(img) {
     background-color: #6E7B6C !important;
 }
+
+span[class="visible"] {
+    color: #303b2f !important;
+    background-color: #c1d1cf !important;
+    text-decoration: none !important;
+}
+
+span[class="visible"]:hover {
+    color: rgb(0, 12, 107) !important;
+    background: whitesmoke !important;
+    text-decoration: none !important;
+}
 }
 
 @-moz-document domain("zhihu.com") {
+code {
+    color: black !important;
+    background-color: #C1D1CF !important;
+}
+
 pre,
 code span {
-    background-color: #303b2f !important;
+    background-color: #C1D1CF !important;
 }
 
 /* editor */
@@ -225,7 +248,7 @@ span {
     .k {
         font-style: italic !important;
         /* e.g. pub, fn, return in rust */
-        color: #a8e3af !important;
+        color: #24b235 !important;
     }
 
     .nf {
